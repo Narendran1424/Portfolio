@@ -135,7 +135,7 @@ nav{
     display: flex;
     gap: 80px;
 }
-#name{
+#name1{
     position: relative;
     width: 45%;
     border-radius: 25px;
@@ -278,7 +278,7 @@ button:hover a{
     .form-container input{
         min-width: 100%;
     }
-    #name,#email{
+    #name1,#email{
         margin-left: 20px;
     }
     #email{
