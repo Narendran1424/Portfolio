@@ -1,0 +1,42 @@
+/* Contact Details Styling */
+.contact-details {
+    margin: 15px 0;
+    color: #333;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.github {
+    background-color: #333; /* Dark Gray for GitHub */
+}
+
+.github:hover {
+    background-color: #555;
+}
+
+.linkedin {
+    background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.linkedin:hover {
+    background-color: #005582;
+}

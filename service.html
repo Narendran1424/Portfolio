@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="service.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home-page">
+        <!--Navbar-->
+        <div class="navbar">
+            <div id="logo">
+                <h2 id="name">Narendran</h2>
+            </div>
+            <nav>
+                <div class="nav-item">
+                    <span> <i class="fa-solid fa-house nav-icon1"></i></span>
+                    <a href="index.html" class="nav-link1 navi-links">Home</a>
+                </div>
+                <div class="nav-item">
+                    <span></span>  <i class="fas fa-user nav-icon2"></i></span>
+                    <a href="about.html" class="nav-link2 navi-links">About</a>
+                </div>
+                <div class="nav-item">
+                    <span> <i class="fas fa-tasks nav-icon3"></i> </span>
+                    <a href="service.html" class="nav-link3 navi-links">Services</a>
+                </div>
+                <div class="nav-item">
+                    <span> <i class="fas fa-briefcase nav-icon4"></i></span>
+                    <a href="project.html" class="nav-link4 navi-links">Projects</a>
+                </div>
+                <div class="nav-item">
+                     <span> <i class="fa-solid fa-message nav-icon5"></i></span> <!-- <i class="fa-solid fa-house nav-icon4"></i> -->
+                    <a href="contact.html" class="nav-link5 navi-links">Contact</a>
+                </div>
+
+            </nav>
+        </div>
+        <!--Services-->
+        <div class="container">
+            <div id="head">
+                <i class="fa-solid fa-bars" id="menu-bar" onclick="toggleMenu()"></i>
+                <h1 >Services</h1>
+                <div id="color1"></div>
+                <div id="color2"></div>
+            </div>
+            <div class="services">
+                <div class="service-box">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Web Design</h3>
+                    <p>Creating visually appealing and fully responsive web layouts for seamless viewing on all devices.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-code"></i>
+                    <h3>Front-End Development</h3>
+                    <p>Building interactive, user-friendly interfaces with HTML, CSS, and JavaScript to enhance user experience.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Designing eye-catching graphics for web and print to effectively convey brand messages.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Improving search engine rankings through keyword optimization and high-quality content strategies.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-database"></i>
+                    <h3>Back-End Integration</h3>
+                    <p>Developing efficient server-side systems and ensuring seamless interaction with front-end applications.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Leveraging digital channels to promote brands and reach target audiences with impactful campaigns.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="service.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+body{
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255,0.5);
+}
+a{
+    text-decoration: none;
+}
+.home-page{
+    display: flex;
+}
+/* navvbar */
+.navbar{
+    position: fixed;
+    padding: 0px 20px;
+    height: 95vh;
+    width: 270px;
+    border: 2px solid rgb(241, 228, 228);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* background-color: rgb(45, 41, 41);
+    color: white; */
+}
+#logo{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 24px;
+    padding: 5px 10px;
+    font-family: 'Playfair Display', serif;
+}
+#logo::before,#logo::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+}
+#logo::before{
+    top: 35px;
+    left: 225px;
+    /* padding-left: 20px; */
+    border-top: 4px solid orangered;
+    border-right: 4px solid orangered;
+}
+#logo::after{
+    border-left: 4px solid orangered;
+    border-bottom:4px solid orangered ;
+    left: 26px;
+    bottom: 580px;
+}
+#name{
+    position: relative;
+    left: 28px;
+    top: 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    row-gap: 50px;
+}
+.nav-item{
+    /* border: 1px solid rgb(82, 78, 78);
+    box-shadow: rgba(80, 77, 77, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: fit-content;
+    padding: 10px 25px;
+    margin-left: 50px;
+    width: 115px
+}
+.nav-item a{
+    font-size: 19px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 590;
+}
+/* contact me */
+ .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 23vw;
+}
+
+#contact-me{
+    font-size: 36px;
+}
+#color1{
+    width: 50px;
+    border-top: 5px solid orangered;
+}
+#color2{
+    margin-top: 5px;
+    width: 25px;
+    border-top: 5px solid orangered;
+}
+#heading{
+    margin-top: 40px; 
+    text-align: center;
+}
+#heading h1{
+    color: orangered;
+}   
+#sub-container2{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around; 
+    column-gap: 150px;
+}
+
+.contact-details{
+    text-align: center;
+    font-size: 18px;
+}
+.contact-details i{
+    color: orangered;
+    font-size: 22px;
+}
+.contact-details p{
+    font-size: 16px;
+}
+/*contact form*/
+.form-container{
+    margin-left: -20px;
+    width: 73vw;
+}
+.form-container input{
+    font-size: 18px;
+    margin-top: 20px;
+    height: 30px;
+    padding: 5px 15px;
+    border:2px solid rgb(88, 79, 79);
+    background-color: white;
+}
+.form-container div{
+    display: flex;
+    gap: 80px;
+}
+#name{
+    position: relative;
+    width: 45%;
+    border-radius: 25px;
+}
+#email{
+    width: 45%;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+#subject{
+    width: 95.3%;
+    border-radius: 25px;
+    margin-left: 25px;
+    background-color: white;
+}
+textarea{
+    font-size: 18px;
+    width: 95%;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border:2px solid rgb(88, 79, 79);
+    outline: none;
+    margin-left: 25px;
+    background-color: white;
+}   
+button{
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: orangered;
+    border: none;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+button a{
+    color: white;
+    font-size: 16px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:hover a{
+    font-size: 17px;
+}
+
+.active{
+    color: orangered;
+}
+
+#menu-bar{
+    display: none;
+}
+
+@media screen and (max-width:370px) {
+    .navbar{
+        padding: 0px 25px;
+        width: 210px;
+        display: none;
+        z-index: 10;
+    }
+    #menu-bar{
+        display: inline;
+    }
+    .navbar.open{
+        display: block;
+    }
+    #logo::before,#logo::after{
+        position: relative;
+        width: 40px;
+        height: 30px;
+        /* display: none; */
+    }
+    #logo::before{
+        top: 15px;
+        left: 162px;
+        padding-left: 35px;
+    }
+    #logo::after{
+        left: -15px;
+        bottom: 41px;
+        padding-right: 35px;
+    }
+    #name{
+        margin-top: -30px;
+        left: -18px;
+        top: 12px;
+    }
+    nav{
+        margin-top: 15px;
+        row-gap: 18px;
+    }
+    .nav-item{
+        padding: 8px 20px;
+        margin-left: 25px;
+    }
+    .nav-item a{
+        font-size: 17px;
+    }
+    /* responsive-navbar*/
+    #menu-bar{
+        color: orangered;
+        border: 2px solid rgb(241, 228, 228);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        padding: 4px 8px;
+        font-size: 18px;
+        margin-left: -2px;
+        margin-top: 0;
+    }
+    .container{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #heading h1{
+        text-align: start;
+        font-size: 26px;
+    }
+    #heading h3{
+        text-align: center;
+    }
+    #sub-container2{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .heading2 h1{
+        margin-left: 40px;
+    }
+    .heading2 h3{
+        font-size: 16px;
+    }
+    .form-container{
+        margin-left: -16px;
+        margin-top: 40px;
+    }
+    .form-container div{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .form-container input{
+        min-width: 100%;
+    }
+    #name,#email{
+        margin-left: 20px;
+    }
+    #email{
+        width: 101%;
+    }
+    #subject{
+        width: 96.5%;
+        margin-left: 20px;
+    }
+    textarea{
+        width: 98.5%;
+        border-radius: 25px;
+        height: 200px;
+        margin-left: 22px;
+    }
+    button{
+        margin-top: 30px;
+        padding: 12px 25px;  
+    }
+}

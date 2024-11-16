@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home-page">
+        <!--Navbar-->
+        <div class="navbar">
+            <div id="logo">
+                <h2 id="name">Narendran</h2>
+            </div>
+            <nav>
+                <div class="nav-item">
+                    <span> <i class="fa-solid fa-house nav-icon1"></i></span>
+                    <a href="index.html" class="nav-link1 navi-links">Home</a>
+                </div>
+                <div class="nav-item">
+                    <span></span>  <i class="fas fa-user nav-icon2"></i></span>
+                    <a href="about.html" class="nav-link2 navi-links">About</a>
+                </div>
+                <div class="nav-item">
+                    <span> <i class="fas fa-tasks nav-icon3"></i> </span>
+                    <a href="service.html" class="nav-link3 navi-links">Services</a>
+                </div>
+                <div class="nav-item">
+                    <span> <i class="fas fa-briefcase nav-icon4"></i></span>
+                    <a href="project.html" class="nav-link4 navi-links">Projects</a>
+                </div>
+                <div class="nav-item">
+                     <span> <i class="fa-solid fa-message nav-icon5"></i></span> <!-- <i class="fa-solid fa-house nav-icon4"></i> -->
+                    <a href="contact.html" class="nav-link5 navi-links">Contact</a>
+                </div>
+
+            </nav>
+        </div>
+        <!--About me-->
+        <div class="container">
+            <div id="heading">
+                <i class="fa-solid fa-bars" id="menu-bar" onclick="toggleMenu()"></i>
+                <h1 id="about-me">About Me</h1>
+                <div id="color1"></div>
+                <div id="color2"></div>
+                <h2>I'm Narendran <span>Web Developer</span></h2>
+                <p>I'm a dedicated web developer with expertise in Java and frontend technologies, including HTML, CSS, and JavaScript. I enjoy creating responsive and dynamic websites that offer engaging user experiences. My portfolio showcases various projects in web design and Java-based applications, highlighting my commitment to clean, efficient code and interactive design. Eager to take on new challenges, I’m focused on delivering high-quality digital solutions that make a meaningful impact in the tech world.</p>
+            </div>
+            <!--details and skills-->
+            <div class="detail-container">
+                <!--info(form)-->
+                <div class="form-container">
+                    <div id="form1">
+                        <div id="detail-info">
+                            <label for="birthday">Birthday : </label>
+                            <span id="dob">24 March 2003</span>
+                        </div>
+                        <div id="detail-info">
+                            <label for="phone">Phone : </label>
+                            <span id="phn">+91 999 494 3050</span>
+                        </div>
+                        <div id="detail-info">
+                            <label for="degree">Degree : </label>
+                            <span>ECE</span>
+                        </div>
+                        
+                        <button id="download-cv"><a href="Narendran Resume.pdf" download="Narendran Resume.pdf">Download CV</a></button>
+                        <button id="hire-me-btn"><a href="#hiring">Hire Me</a></button>
+                    </div>
+                    <div id="form2">
+                        <div>
+                            <label for="email">Email : </label>
+                            <span>narendran1300@gmail.com</span>
+                        </div>
+                        <div>
+                            <label for="age">Age : </label>
+                            <span>21</span>
+                        </div> 
+                        <div>
+                            <label for="city">City : </label>
+                            <span>Chennai</span>
+                        </div>
+                        <button id="hire-me"><a href="#hiring">Hire Me</a></button>
+                        </div>
+                </div>
+                <!--Skills-->
+                <div class="skill-container">
+                    <li>
+                        <h4>HTML <span>90%</span></h4>
+                        <span class="bar"><span class="html"></span></span>
+                    </li>
+                    <li>
+                        <h4>CSS <span>80%</span></h4>
+                        <span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li>
+                        <h4>JAVASCRIPT <span>70%</span></h4>
+                        <span class="bar"><span class="javascript"></span></span>
+                    </li>
+                    <li>
+                        <h4>JAVA <span>65%</span></h4>
+                        <span class="bar"><span class="java"></span></span>
+                    </li>
+                </div>
+            </div>
+            <!--Education and Experience-->
+            <div class="qualification-container">
+                <!--Education-->
+                <div class="education-container">
+                    <h2>Education</h2>
+                    <div class="outer-div">
+                        <div class="inner-div">
+                            <span id="circle"></span>
+                            <div class="timeline-item">
+                                <span class="year"><i class="fas fa-calendar"></i> 2017 - 2018</span>
+                                <h3>Secondary School Certificate</h3>
+                                <p>I completed my Secondary School Certificate (SSC) Morning Star Matriculation School in Thanjavur, TamilNadu, in 2018 with an overall percentage of 88.4%.</p>
+                            </div>
+                            <span id="circle"></span>
+                            <div class="timeline-item">
+                                <span class="year"><i class="fas fa-calendar"></i> 2018 - 2020</span>
+                                <h3>High School Certificate</h3>
+                                <p>I completed my High School Certificate (HSC) Maxwell Matriculation and Higher Secondary School in Thanjavur, TamilNadu, in 2020 with an overall percentage of 77.83%.</p>
+                            </div>
+                            <span id="circle"></span>
+                            <div class="timeline-item">
+                                <span class="year"><i class="fas fa-calendar"></i> 2020 - 2024</span>
+                                <h3>Bachelor in Electronics and Communication</h3>
+                                <p>I completed my Bachelor of Engineering in  Electronics and Communication Engineering (ECE) from Government College Of Engineering Thanjavur (GCET),in 2024 with a CGPA of 7.76.</p>
+                            </div>
+                            <span id="circle"></span>
+                            <div class="timeline-item">
+                                <span class="year"><i class="fas fa-calendar"></i> 2024 - Present</span>
+                                <h3>Java Full-Stack Course</h3>
+                                <p>Currently enrolled in a Java Developer course at Besant Technologies, Chennai. The program focuses on both front-end and back-end technologies, covering essential skills in Java, Spring Boot, HTML, CSS, JavaScript, and database management. This training aims to equip me with the tools necessary to develop robust web applications.</p>
+                            </div>
+                        </div> <!---->
+                    </div>
+                </div>
+                <!--Experience-->
+                <div class="experience-container">
+                    <h2>Experience</h2>
+                    <div class="outer-div">
+                        <div class="inner-div">
+                            <span id="circle"></span>
+                            <div class="timeline-item">
+                                <span class="year"><i class="fas fa-calendar"></i> 2023 - 2023</span>
+                                <h3>Embeeded C Intern</h3>
+                                <p>Embeeded C Intern VACT Technologies,Coimbatore Completed a one-month internship in Embedded C in July 2023, where I gained hands-on experience in programming and debugging embedded systems. I worked on microcontroller-based projects, focusing on optimizing code efficiency and ensuring reliable system performance. This role enhanced my understanding of embedded systems, real-time application development, and low-level hardware interaction.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div id="hiring">
+                <h2><span id="close"><i class="fa fa-close"></i></span></h2>
+                <div id="content">
+                    <h2>Let's Work Together</h2>
+                    <p><i class="fa-solid fa-arrow-right"></i>Looking for a developer to bring your ideas to life? I'm ready to collaborate on your next project.</p>
+                    <p><i class="fa-solid fa-arrow-right"></i>Whether it's freelance work or a long-term role, let's make it happen together!</p>
+                </div>
+                <div class="contact-details">
+                    <p><strong>Email:</strong>narendran1300@gmail.com</p>
+                    <p><strong>Phone:</strong>+91 9994943050</p>
+                </div>
+                <div class="buttons">
+                    <button><a href="Narendran Resume.pdf"download="Narendran Resume.pdf">Download CV</a></button>
+                    <button id="contact-me-btn"><a href="contact.html">Contact Me</a></button>
+                </div>
+                <div class="social-media-links">
+                    <a href="#" target="_blank" class="social-icon" id="insta"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/narendrang21"target="_blank" class="social-icon" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Narendran1424"target="_blank" class="social-icon" id="github"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="mailto:narendran1300@gmail.com"target="_blank" class="social-icon" id="email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="about.js"></script>
+</body>
+</html>

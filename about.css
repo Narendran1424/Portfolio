@@ -1,0 +1,545 @@
+body{
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255,0.5);
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.home-page{
+    display: flex;
+}
+/* navbar*/
+.navbar{
+    padding: 0px 20px;
+    height: 95vh;
+    position: fixed;
+    width: 270px;
+    border: 2px solid rgb(241, 228, 228);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    /* background-color: rgb(45, 41, 41);
+    color: white; */
+}
+#logo{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 24px;
+    padding: 5px 10px;
+    font-family: 'Playfair Display', serif;
+}
+#logo::before,#logo::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 30px;
+}
+#logo::before{
+    top: 35px;
+    left: 226px;
+    /* padding-left: 20px; */
+    border-top: 4px solid orangered;
+    border-right: 4px solid orangered;
+}
+#logo::after{
+    border-left: 4px solid orangered;
+    border-bottom:4px solid orangered ;
+    left: 26px;
+    bottom: 580px;
+}
+#name{
+    position: relative;
+    left: 28px;
+    top: 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    row-gap: 50px;
+}
+.nav-item{
+    /* border: 1px solid rgb(82, 78, 78);
+    box-shadow: rgba(80, 77, 77, 0.1) 0px 4px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: fit-content;
+    padding: 10px 25px;
+    margin-left: 50px;
+    width: 115px
+}
+.nav-item a{
+    font-size: 19px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 590;
+}
+/* about me*/
+.container{
+    margin-top: 30px;
+    margin-left: 23vw;
+}
+#about-me{
+    font-size: 36px;
+}
+#color1{
+    width: 50px;
+    border-top: 5px solid orangered;
+}
+#color2{
+    margin-top: 5px;
+    width: 25px;
+    border-top: 5px solid orangered;
+}
+#heading h2{
+    margin-top: 40px;
+}
+#heading span{
+    color: orangered;
+}
+#heading p{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    word-spacing: 2px;
+    width: 97%;
+    line-height: 25px;
+    /* color: rgb(100, 95, 95); */
+    color: rgb(69, 65, 65);
+}
+.detail-container{
+    display: flex;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 550;
+    gap: 80px;
+}
+.form-container{
+    display: flex;
+    gap: 40px;
+}
+.form-container span{
+    border: none;
+    margin-bottom: 8px;
+    width: 230px;
+    font-size: 16px;
+    color: rgb(69, 65, 65);
+    font-weight: 500;
+}
+#form1 div{
+    /* border-bottom: 2px solid black; */
+    padding: 5px 5px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 1px;
+}
+/* buttons */
+#form1 button a{
+    color: white;
+}
+#form1 button{
+    margin-top: 40px;
+    background-color: orangered;
+    border: none;
+    width: fit-content;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+#form1 button:hover{
+    cursor: pointer;
+    background-color: black;
+    font-size: 17px;
+}
+#hire-me-btn{
+    margin-left: 10px;
+}
+#form2 div{
+    border-bottom: 2px solid white;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 1px;
+}
+.skill-container{
+    margin-top: -20px;
+    width: 350px;
+}
+.skill-container li h4 span{
+    float: right;
+    margin-right: 10px;
+    color: rgb(69, 65, 65);
+    /* font-weight: 550; */
+}
+.bar{
+    display: block;
+    background-color: grey;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar span{
+    float: left;
+    height: 8px;
+    border-radius: 5px;
+}
+.html{
+    width: 90%;
+    background-color: orangered;
+    animation: html 3s;
+}
+.css{
+    width: 80%;
+    background-color: orangered;
+    animation: css 3s;
+}
+.javascript{
+    width: 70%;
+    background-color: orangered;
+    animation: javascript 3s;
+}
+.java{
+    width: 65%;
+   background-color: orangered;
+    animation: java 3s;
+}
+
+@keyframes html {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes css {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes javascript {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes java {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 65%;
+    }
+}
+/*education & experience*/
+.qualification-container{
+    margin-top: 50px;
+    display: flex;
+    column-gap:30px ;
+}
+/* .education-container{
+    width: 60%;
+} */
+.outer-div{
+    margin-top: 30px;
+    border: 2px solid rgb(241, 228, 228);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 6px;
+    padding-bottom: 10px;
+}
+#circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: orangered;
+    margin-left: -8px;
+    margin-top: 20px;
+    display: block;
+}
+.inner-div{
+    margin-top: 20px;
+    margin-left: 16px;
+    border-left: 2px solid orangered;
+}
+.timeline-item{
+    padding: 0px 30px;
+    margin-top: -10px;
+}
+.timeline-item i{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.timeline-item p{
+    color: rgb(69, 65, 65);   
+    font-size: 17px;
+    max-width: 500px;
+}
+#hiring{
+    width: 45%;
+    margin-left: 200px;
+    /* margin-top: 100px; */
+    border: 5px solid rgb(204, 192, 192);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    border-radius: 8px;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 10px;
+    /* bottom: -0px; */
+    /* bottom: 1400px; */
+    z-index: 2000;
+    background-color: white;
+}
+#hiring span{
+    float: right;
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 1px 4px;
+    color: white;
+    font-size: 15px;
+    margin-top: -15px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+#hiring span:hover{
+    background-color: black;
+}
+#content{
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-right: auto;
+}
+.fa-arrow-right{
+    color: orangered;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#content p{
+    color: rgb(69, 65, 65);   
+    font-size: 17px;
+    text-indent: 15px;
+    margin-left: 20px;
+    line-height: 20px;
+    font-family:  sans-serif;
+}
+.contact-details p{
+    margin-left: 15px;
+    font-size: 18px;
+    color: rgb(69, 65, 65);   
+}
+.contact-details p strong{
+    margin-left: 5px;
+    font-size: 17px;
+    margin-right: 8px;
+    color: black;
+}
+.buttons{
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons button a{
+    color: white;
+}
+.buttons button{
+    margin-top: 40px;
+    background-color: crimson;
+    border: none;
+    width: fit-content;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.buttons button:hover{
+    cursor: pointer;
+    background-color: black;
+    font-size: 17px;
+}
+#contact-me-btn{
+    margin-left: 10px;
+}
+.social-media-links{
+    margin-top: 30px;
+    margin-left:20px;
+    display: flex;
+    gap: 10px;
+}
+.social-icon{
+    font-size: 24px;
+    transition: color o.3s ease;
+    color: orangered;
+}
+#insta:hover{
+    color: #E1306C;   
+    transform: translate(0,-10%);
+} 
+#linkedin:hover{
+    color: #0077B5;
+    transform: translate(0,-10%);
+}
+#github:hover{
+    color: #181717;
+    transform: translate(0,-10%);
+}
+#email:hover{
+    color: cornflowerblue;
+    transform: translate(0,-10%);
+}
+/* Add blur effect */
+/* #heading, .detail-container, .qualification-container {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+.blur-effect{
+    filter: blur(25px);
+    background-color: #181717;
+    z-index: -10000000;
+}
+
+.active{
+    color: orangered;
+}
+#menu-bar{
+    display: none;
+}
+#hire-me{
+    display: none;
+}
+@media screen and (max-width:370px) {
+    .navbar{
+        padding: 0px 25px;
+        width: 210px;
+        display: none;
+        z-index: 10;
+    }
+    #menu-bar{
+        display: inline;
+    }
+    .navbar.open{
+        display: block;
+    }
+    #logo::before,#logo::after{
+        position: relative;
+        width: 40px;
+        height: 30px;
+        /* display: none; */
+    }
+    #logo::before{
+        top: 15px;
+        left: 162px;
+        padding-left: 35px;
+    }
+    #logo::after{
+        left: -15px;
+        bottom: 41px;
+        padding-right: 35px;
+    }
+    #name{
+        margin-top: -30px;
+        left: 2px;
+        top: 12px;
+    }
+    nav{
+        margin-top: 15px;
+        row-gap: 18px;
+    }
+    .nav-item{
+        padding: 8px 20px;
+        margin-left: 25px;
+    }
+    .nav-item a{
+        font-size: 17px;
+    }
+    /* responsive-navbar*/
+    #menu-bar{
+        color: orangered;
+        border: 2px solid rgb(241, 228, 228);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        padding: 4px 8px;
+        font-size: 18px;
+        margin-left: -2px;
+        margin-top: 0;
+    }
+    .container{
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+    #about-me{
+        font-size: 32px;
+    }
+    #heading h2{
+        font-size: 24px;
+    }
+    #heading p{
+        font-size: 17px;
+        width: 97%;
+    }
+    .detail-container{
+        font-size: 16px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .form-container{
+        display: flex;
+        font-size: 16px;
+        gap: 10px;
+    }
+    .form-container span{
+        border: none;
+        /* margin-bottom: 8px; */
+        font-size: 15px;
+        color: rgb(69, 65, 65);
+        font-weight: 500;
+    }
+    #hire-me a{
+        color: white;
+    }
+    #hire-me{
+        display: block;
+        background-color: orangered;
+        border: none;
+        width: fit-content;
+        border-radius: 25px;
+        font-size: 17px;
+        margin-top: 34px;
+        padding: 10px 30px;
+    }
+    #form1 button{
+        font-size: 17px;
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+    #hire-me-btn{
+        display: none;
+    }
+    #form2 div{
+        margin-bottom: 22px;
+    }
+    .qualification-container{
+        flex-direction: column;
+    }
+    #hiring{
+        margin-left: 15px;
+        width: 80%;
+    }
+    #content{
+        margin-left: 0;
+    }
+    #content p{
+        text-indent: -10px;
+        font-size: 16px;
+    }
+    .contact-details p{
+        font-size: 16px;
+    }
+    .buttons button{
+        margin-top: 15px;
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+    #contact-me-btn{
+        margin-left: 8px;
+    }
+}

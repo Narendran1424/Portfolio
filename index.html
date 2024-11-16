@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="home-page">
+        <!--Navbar-->
+        <div class="navbar">
+            <div id="logo">
+                <h2 id="name">Narendran</h2>
+            </div>
+            <nav>
+                <div class="nav-item">
+                    <span> <i class="fa-solid fa-house nav-icon1"></i></span>
+                    <a href="index.html" class="nav-link1 navi-links">Home</a>
+                </div>
+                <div class="nav-item">
+                    <span> <i class="fas fa-user nav-icon2"></i></span>
+                    <a href="about.html" class="nav-link2 navi-links">About</a>
+                </div>
+                <div class="nav-item">
+                    <span> <i class="fas fa-tasks nav-icon3"></i></span>
+                    <a href="service.html" class="nav-link3 navi-links">Services</a>
+                </div>
+                <div class="nav-item">
+                    <span> <i class="fas fa-briefcase nav-icon4"></i></span>
+                    <a href="project.html" class="nav-link4 navi-links">Projects</a>
+                </div>
+                <div class="nav-item">
+                     <span> <i class="fa-solid fa-message nav-icon5"></i></span> <!-- <i class="fa-solid fa-house nav-icon4"></i> -->
+                    <a href="contact.html" class="nav-link5 navi-links">Contact</a>
+                </div>
+            </nav>
+        </div>
+        <!--description of mine-->
+        <div class="container">
+            <div class="sub-container">
+                <i class="fa-solid fa-bars" id="menu-bar" onclick="toggleMenu()"></i>
+                <h1>Hello, my name is <span style="font-weight: 550; color: orangered;">Narendran</span> </h1>
+                <h1>I'm a <span id="describe"></span></h1>
+                <p>I am a passionate web developer with expertise in frontend technologies like HTML, CSS, and JavaScript. I enjoy creating responsive, user-friendly websites that enhance user experiences and solve real-world problems. Let's collaborate to bring your ideas to life!</p>
+                <button><a href="about.html">More About Me</a></button>
+            </div>
+            <!--Image container-->
+            <div class="sub-container2">
+                <img src="images/Narendran.jpg" alt="Profile">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
